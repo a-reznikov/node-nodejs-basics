@@ -8,8 +8,7 @@ const create = async () => {
         await appendFile(resolve(__dirname, 'files/fresh.txt'), 'I am fresh and young', { flag: 'wx' });
         console.log('=== File was successfully created! ===');
     } catch {
-        const error = new Error('Error: FS operation failed!');
-        console.error(error.message);
+        throw new Error('FS operation failed!');
     }
 };
 
