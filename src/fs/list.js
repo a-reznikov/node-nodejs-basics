@@ -8,8 +8,8 @@ const list = async () => {
 
     try {
         const objInDir = await readdir(source);
-        objInDir.forEach((element) => {
-            console.log(element);
+        objInDir.forEach((obj) => {
+            console.log(obj);
         });
     } catch {
         throw new Error('FS operation failed!');
