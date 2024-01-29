@@ -3,7 +3,7 @@ import { pipeline } from 'node:stream/promises';
 import { createReadStream } from 'node:fs';
 import { createHash } from 'node:crypto'
 
-const pathToFile = getPathToFile(import.meta.url, 'fileToCalculateHashFor.txt')
+const pathToFile = getPathToFile(import.meta.url, 'fileToCalculateHashFor.txt');
 
 const calculateHash = async () => {
     try {

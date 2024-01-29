@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { getPathToFile } from '../utils/getPathToFile.js';
 
 const read = async () => {
-    const pathToFile = getPathToFile(import.meta.url, 'fileToRead.txt')
+    const pathToFile = getPathToFile(import.meta.url, 'fileToRead.txt');
 
     try {
         const contents = await readFile(pathToFile, { encoding: 'utf8' });

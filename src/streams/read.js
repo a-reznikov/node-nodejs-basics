@@ -2,7 +2,7 @@ import { getPathToFile } from '../utils/getPathToFile.js';
 import { createReadStream } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 
-const pathToFile = getPathToFile(import.meta.url, 'fileToRead.txt')
+const pathToFile = getPathToFile(import.meta.url, 'fileToRead.txt');
 
 const read = async () => {
     try {

@@ -2,7 +2,7 @@ import { getPathToFile } from '../utils/getPathToFile.js';
 import { createWriteStream } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 
-const pathToFile = getPathToFile(import.meta.url, 'fileToWrite.txt')
+const pathToFile = getPathToFile(import.meta.url, 'fileToWrite.txt');
 
 const write = async () => {
     try {
